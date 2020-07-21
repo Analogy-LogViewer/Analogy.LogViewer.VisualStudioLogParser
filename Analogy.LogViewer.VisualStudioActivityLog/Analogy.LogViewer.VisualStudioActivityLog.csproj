@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>Analogy.LogViewer.VisualStudioActivityLog</RootNamespace>
+		<AssemblyName>Analogy.LogViewer.VisualStudioActivityLog</AssemblyName>
+		<TargetFrameworks>net471;net472;netcoreapp3.1</TargetFrameworks>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<AssemblyTitle>Analogy.LogViewer.XMLFileProvider</AssemblyTitle>
+		<Product>Analogy.LogViewer.VisualStudioActivityLog</Product>
+		<Copyright>Copyright ©  2020</Copyright>
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<PackageId>Analogy.LogViewer.VisualStudioActivityLog</PackageId>
+		<Authors>Lior Banai</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.VisualStudioActivityLog</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.VisualStudioActivityLog</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+		<ApplicationIcon>AnalogyVS32x32.ico</ApplicationIcon>
+		<Company>Analogy.LogViewer</Company>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageIcon>AnalogyVS.png</PackageIcon>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Analogy.DataProviders.Extensions" Version="1.1.7.1" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.3.1.1" />
+		<PackageReference Include="Microsoft.Build.Tasks.Git" Version="1.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="System.Resources.Extensions" Version="4.6.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="Microsoft.CSharp" />
+		<Reference Include="System.Net.Http" />
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\Assets\AnalogyVS.png">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>
