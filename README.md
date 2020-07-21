@@ -1,4 +1,4 @@
-# Analogy.LogViewer.VSLogParser   <img src="./Assets/AnalogyVS.png" align="right" width="155px" height="155px">
+# Visual Studio Activity Log Parser   <img src="./Assets/AnalogyVS.png" align="right" width="155px" height="155px">
 
 <p align="center">
 
