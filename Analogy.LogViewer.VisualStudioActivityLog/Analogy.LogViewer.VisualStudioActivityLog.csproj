@@ -8,14 +8,14 @@
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<AssemblyTitle>Analogy.LogViewer.XMLFileProvider</AssemblyTitle>
-		<Product>Analogy.LogViewer.VisualStudioActivityLog</Product>
+		<Product>Analogy.LogViewer.VisualStudioLogParser</Product>
 		<Copyright>Copyright ©  2020</Copyright>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
-		<PackageId>Analogy.LogViewer.VisualStudioActivityLog</PackageId>
+		<PackageId>Analogy.LogViewer.VisualStudioLogParser</PackageId>
 		<Authors>Lior Banai</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.VisualStudioActivityLog</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.VisualStudioActivityLog</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.VisualStudioLogParser</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Analogy-LogViewer/Analogy.LogViewer.VisualStudioLogParser</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
 		<ApplicationIcon>AnalogyVS32x32.ico</ApplicationIcon>
