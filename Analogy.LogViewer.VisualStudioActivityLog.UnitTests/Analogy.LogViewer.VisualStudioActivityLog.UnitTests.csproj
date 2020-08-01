@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>Analogy.LogViewer.XMLFileProvider.UnitTests</RootNamespace>
-    <AssemblyName>Analogy.LogViewer.XMLParser.UnitTests</AssemblyName>
+    <RootNamespace>Analogy.LogViewer.VisualStudioLogParser.UnitTests</RootNamespace>
+    <AssemblyName>Analogy.LogViewer.VisualStudioLogParser.UnitTests</AssemblyName>
     <TargetFramework>net472</TargetFramework>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
-    <AssemblyTitle>Analogy.LogViewer.XMLFileProvider.UnitTests</AssemblyTitle>
-    <Product>Analogy.LogViewer.XMLFileProvider.UnitTests</Product>
+    <AssemblyTitle>Analogy.LogViewer.VisualStudioLogParser.UnitTests</AssemblyTitle>
+    <Product>Analogy.LogViewer.VisualStudioLogParser.UnitTests</Product>
     <Copyright>Copyright ©  2019</Copyright>
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>

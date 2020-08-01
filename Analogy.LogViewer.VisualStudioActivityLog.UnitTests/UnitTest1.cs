@@ -1,7 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Analogy.LogViewer.XMLFileProvider.UnitTests
+namespace Analogy.LogViewer.VisualStudioLogParser.UnitTests
 {
     [TestClass]
     public class UnitTest1

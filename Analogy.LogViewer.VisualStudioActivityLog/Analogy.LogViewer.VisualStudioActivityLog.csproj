@@ -7,7 +7,7 @@
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<AssemblyTitle>Analogy.LogViewer.XMLFileProvider</AssemblyTitle>
+		<AssemblyTitle>Analogy.LogViewer.VisualStudioLogParser</AssemblyTitle>
 		<Product>Analogy.LogViewer.VisualStudioLogParser</Product>
 		<Copyright>Lior Banai © 2020</Copyright>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
@@ -23,7 +23,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageIcon>AnalogyVS.png</PackageIcon>
 		<Description>Visual studio Activity log parser for Analogy Log Viewer</Description>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<PackageReleaseNotes>Initial version</PackageReleaseNotes>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
