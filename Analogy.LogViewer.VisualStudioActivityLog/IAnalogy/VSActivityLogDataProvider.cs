@@ -12,11 +12,11 @@ namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
 {
     public class VSActivityLogDataProvider : IAnalogyOfflineDataProvider
     {
-        public string OptionalTitle { get; } = "Visual Studio Activity Log Parser";
+        public string OptionalTitle { get; set; } = "Visual Studio Activity Log Parser";
 
-        public Guid Id { get; } = new Guid("1ee52030-4866-4c4a-b7bb-75e5cb8a58ef");
-        public Image LargeImage => null;
-        public Image SmallImage => null;
+        public Guid Id { get; set; } = new Guid("1ee52030-4866-4c4a-b7bb-75e5cb8a58ef");
+        public Image LargeImage { get; set; } = null;
+        public Image SmallImage { get; set; } = null;
 
         public bool CanSaveToLogFile { get; } = false;
         public string FileOpenDialogFilters { get; } = "Visual studio ActivityLog.xml files|ActivityLog.xml";

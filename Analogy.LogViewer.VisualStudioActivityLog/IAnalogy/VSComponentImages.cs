@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Drawing;
-using Analogy.DataProviders.Extensions;
+using Analogy.Interfaces;
 using Analogy.LogViewer.VisualStudioActivityLog.Properties;
 
 namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
