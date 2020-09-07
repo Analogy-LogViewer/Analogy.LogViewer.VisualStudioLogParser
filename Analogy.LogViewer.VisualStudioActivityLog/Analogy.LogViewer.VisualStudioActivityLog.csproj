@@ -23,7 +23,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageIcon>AnalogyVS.png</PackageIcon>
 		<Description>Visual studio Activity log parser for Analogy Log Viewer</Description>
-		<Version>1.0.6</Version>
+		<Version>1.1.0</Version>
 		<PackageReleaseNotes>Initial version</PackageReleaseNotes>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

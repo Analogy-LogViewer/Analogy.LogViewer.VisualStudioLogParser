@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using Analogy.Interfaces;
 using Analogy.Interfaces.Factories;
+using Analogy.LogViewer.VisualStudioActivityLog.Properties;
 
 
 namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
@@ -11,6 +13,8 @@ namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
         internal static Guid factory = new Guid("a437ad53-0ecc-49a7-9fc3-b2f60ad007e2");
         public Guid FactoryId { get; set; } = factory;
         public string Title { get; set; } = "VS Activity Log Parser";
+        public Image SmallImage { get; set; } = Resources.AnalogyVS16x16;
+        public Image LargeImage { get; set; } = Resources.AnalogyVS32x32;
         public IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = VisualStudioActivityLog.ChangeLog.GetChangeLog();
         public IEnumerable<string> Contributors { get; set; } = new List<string> { "Lior Banai" };
         public string About { get; set; } = "VS Activity Log Parser";
