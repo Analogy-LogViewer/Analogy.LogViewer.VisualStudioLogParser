@@ -26,7 +26,7 @@ namespace Analogy.LogViewer.VisualStudioActivityLog
                 foreach (activityEntry entry in entries.entry)
                 {
                     AnalogyLogLevel level = entry.type == "Information"
-                        ? AnalogyLogLevel.Event
+                        ? AnalogyLogLevel.Information
                         : (entry.type == "Warning" ? AnalogyLogLevel.Warning : AnalogyLogLevel.Error);
                     AnalogyLogMessage m = new AnalogyLogMessage(entry.description, level, AnalogyLogClass.General, "");
                     if (DateTime.TryParse(entry.time, out var time))
