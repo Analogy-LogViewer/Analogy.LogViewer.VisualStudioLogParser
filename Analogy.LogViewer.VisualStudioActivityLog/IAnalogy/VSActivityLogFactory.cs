@@ -10,8 +10,13 @@ namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
 {
     public class VSActivityLogFactory : IAnalogyFactory
     {
-        internal static Guid factory = new Guid("a437ad53-0ecc-49a7-9fc3-b2f60ad007e2");
-        public Guid FactoryId { get; set; } = factory;
+        internal static Guid Id = new Guid("a437ad53-0ecc-49a7-9fc3-b2f60ad007e2");
+        public void RegisterNotificationCallback(INotificationReporter notificationReporter)
+        {
+            
+        }
+
+        public Guid FactoryId { get; set; } = Id;
         public string Title { get; set; } = "VS Activity Log Parser";
         public Image SmallImage { get; set; } = Resources.AnalogyVS16x16;
         public Image LargeImage { get; set; } = Resources.AnalogyVS32x32;
@@ -22,7 +27,7 @@ namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
 
     public class AnalogyXMLDataProviderFactory : IAnalogyDataProvidersFactory
     {
-        public Guid FactoryId { get; set; } = VSActivityLogFactory.factory;
+        public Guid FactoryId { get; set; } = VSActivityLogFactory.Id;
         public string Title { get; set; } = "VS Activity Log Data Provider";
         public IEnumerable<IAnalogyDataProvider> DataProviders { get; } = new List<IAnalogyDataProvider>()
         {
@@ -32,7 +37,7 @@ namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
 
     public class VSActivityLogCustomActionFactory : IAnalogyCustomActionsFactory
     {
-        public Guid FactoryId { get; set; } = VSActivityLogFactory.factory;
+        public Guid FactoryId { get; set; } = VSActivityLogFactory.Id;
         public string Title { get; set; } = "VS Activity Log tools";
         public IEnumerable<IAnalogyCustomAction> Actions { get; } = new List<IAnalogyCustomAction>(0);
     }

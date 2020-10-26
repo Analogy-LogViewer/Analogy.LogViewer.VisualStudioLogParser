@@ -9,14 +9,14 @@ namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
     //{
     //    public Image GetLargeImage(Guid analogyComponentId)
     //    {
-    //        if (analogyComponentId == VSActivityLogFactory.factory)
+    //        if (analogyComponentId == VSActivityLogFactory.Id)
     //            return Resources.AnalogyVS32x32;
     //        return null;
     //    }
 
     //    public Image GetSmallImage(Guid analogyComponentId)
     //    {
-    //        if (analogyComponentId == VSActivityLogFactory.factory)
+    //        if (analogyComponentId == VSActivityLogFactory.Id)
     //            return Resources.VS16x16;
     //        return null;
     //    }
