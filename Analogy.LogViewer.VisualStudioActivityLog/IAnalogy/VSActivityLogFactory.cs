@@ -8,28 +8,23 @@ using Analogy.LogViewer.VisualStudioActivityLog.Properties;
 
 namespace Analogy.LogViewer.VisualStudioActivityLog.IAnalogy
 {
-    public class VSActivityLogFactory : IAnalogyFactory
+    public class VSActivityLogFactory : Template.PrimaryFactory
     {
         internal static Guid Id = new Guid("a437ad53-0ecc-49a7-9fc3-b2f60ad007e2");
-        public void RegisterNotificationCallback(INotificationReporter notificationReporter)
-        {
-            
-        }
-
-        public Guid FactoryId { get; set; } = Id;
-        public string Title { get; set; } = "VS Activity Log Parser";
-        public Image SmallImage { get; set; } = Resources.AnalogyVS16x16;
-        public Image LargeImage { get; set; } = Resources.AnalogyVS32x32;
-        public IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = VisualStudioActivityLog.ChangeLog.GetChangeLog();
-        public IEnumerable<string> Contributors { get; set; } = new List<string> { "Lior Banai" };
-        public string About { get; set; } = "VS Activity Log Parser";
+        public override Guid FactoryId { get; set; } = Id;
+        public override string Title { get; set; } = "VS Activity Log Parser";
+        public override Image? SmallImage { get; set; } = Resources.AnalogyVS16x16;
+        public override Image? LargeImage { get; set; } = Resources.AnalogyVS32x32;
+        public override IEnumerable<IAnalogyChangeLog> ChangeLog { get; set; } = VisualStudioActivityLog.ChangeLog.GetChangeLog();
+        public override IEnumerable<string> Contributors { get; set; } = new List<string> { "Lior Banai" };
+        public override string About { get; set; } = "VS Activity Log Parser";
     }
 
-    public class AnalogyXMLDataProviderFactory : IAnalogyDataProvidersFactory
+    public class AnalogyXMLDataProviderFactory : Template.DataProvidersFactory
     {
-        public Guid FactoryId { get; set; } = VSActivityLogFactory.Id;
-        public string Title { get; set; } = "VS Activity Log Data Provider";
-        public IEnumerable<IAnalogyDataProvider> DataProviders { get; } = new List<IAnalogyDataProvider>()
+        public override Guid FactoryId { get; set; } = VSActivityLogFactory.Id;
+        public override string Title { get; set; } = "VS Activity Log Data Provider";
+        public override IEnumerable<IAnalogyDataProvider> DataProviders { get; set; } = new List<IAnalogyDataProvider>()
         {
             new VSActivityLogDataProvider()
         };
