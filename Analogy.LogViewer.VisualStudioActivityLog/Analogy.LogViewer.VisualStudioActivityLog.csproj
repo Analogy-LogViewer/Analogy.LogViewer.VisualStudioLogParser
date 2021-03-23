@@ -10,7 +10,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<AssemblyTitle>Analogy.LogViewer.VisualStudioLogParser</AssemblyTitle>
 		<Product>Analogy.LogViewer.VisualStudioLogParser</Product>
-		<Copyright>Lior Banai © 2020</Copyright>
+		<Copyright>Lior Banai © 2020-2021</Copyright>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
 		<PackageId>Analogy.LogViewer.VisualStudioLogParser</PackageId>
 		<Authors>Lior Banai</Authors>
@@ -24,7 +24,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageIcon>AnalogyVS.png</PackageIcon>
 		<Description>Visual studio Activity log parser for Analogy Log Viewer</Description>
-		<Version>1.4.1.1</Version>
+		<Version>1.4.2</Version>
 		<Nullable>enable</Nullable>
 		<LangVersion>8.0</LangVersion>
 		<PackageReleaseNotes>Initial version</PackageReleaseNotes>
@@ -37,8 +37,8 @@
 		<DebugType>pdbonly</DebugType>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.11.0" />
-		<PackageReference Include="Analogy.LogViewer.Template" Version="1.8.1.3" />
+		<PackageReference Include="Analogy.LogViewer.Interfaces" Version="2.12.1" />
+		<PackageReference Include="Analogy.LogViewer.Template" Version="1.8.3.1" />
 		<PackageReference Include="Microsoft.Build.Tasks.Git" Version="1.0.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
