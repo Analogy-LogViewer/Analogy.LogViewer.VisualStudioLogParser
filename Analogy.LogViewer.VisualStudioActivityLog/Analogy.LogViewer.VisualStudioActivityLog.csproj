@@ -24,7 +24,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageIcon>AnalogyVS.png</PackageIcon>
 		<Description>Visual studio Activity log parser for Analogy Log Viewer</Description>
-		<Version>1.5.0</Version>
+		<Version>1.5.1</Version>
 		<Nullable>enable</Nullable>
 		<LangVersion>8.0</LangVersion>
 		<PackageReleaseNotes>Initial version</PackageReleaseNotes>
