@@ -10,7 +10,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<AssemblyTitle>Analogy.LogViewer.VisualStudioLogParser</AssemblyTitle>
 		<Product>Analogy.LogViewer.VisualStudioLogParser</Product>
-		<Copyright>Lior Banai © 2020-2021</Copyright>
+		<Copyright>Lior Banai © 2020-2022</Copyright>
 		<OutputPath>bin\$(Configuration)\</OutputPath>
 		<PackageId>Analogy.LogViewer.VisualStudioLogParser</PackageId>
 		<Authors>Lior Banai</Authors>
@@ -24,7 +24,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageIcon>AnalogyVS.png</PackageIcon>
 		<Description>Visual studio Activity log parser for Analogy Log Viewer</Description>
-		<Version>1.6.0</Version>
+		<Version>1.6.1</Version>
 		<Nullable>enable</Nullable>
 		<LangVersion>8.0</LangVersion>
 		<PackageReleaseNotes>Initial version</PackageReleaseNotes>
