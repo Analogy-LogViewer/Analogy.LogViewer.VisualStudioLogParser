@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 using Analogy.Interfaces;
+using Analogy.Interfaces.DataTypes;
 using Analogy.LogViewer.VisualStudioActivityLog.Types;
 
 namespace Analogy.LogViewer.VisualStudioActivityLog
@@ -21,10 +22,12 @@ namespace Analogy.LogViewer.VisualStudioActivityLog
             List<AnalogyLogMessage> msg = new List<AnalogyLogMessage>();
             using (StreamReader reader = new StreamReader(fileName))
             {
+                long count = 0;
                 var entries = (activity)serializer.Deserialize(reader);
                 reader.Close();
-                foreach (activityEntry entry in entries.entry)
+                for (var i = 0; i < entries.entry.Length; i++)
                 {
+                    activityEntry entry = entries.entry[i];
                     AnalogyLogLevel level = entry.type == "Information"
                         ? AnalogyLogLevel.Information
                         : (entry.type == "Warning" ? AnalogyLogLevel.Warning : AnalogyLogLevel.Error);
@@ -41,6 +44,7 @@ namespace Analogy.LogViewer.VisualStudioActivityLog
                     m.AdditionalInformation.Add("Is Specific", entry.hrSpecified.ToString());
                     m.AdditionalInformation.Add("Path", entry.path);
                     messagesHandler.AppendMessage(m, fileName);
+                    messagesHandler.ReportFileReadProgress(new AnalogyFileReadProgress(AnalogyFileReadProgressType.Percentage, 1, i, entries.entry.Length));
                     msg.Add(m);
                 }
             }
